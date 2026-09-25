@@ -268,7 +268,7 @@ export default function Home() {
             </span>
 
             <a
-              href="https://github.com/kanzakh/EduSite-Cap1"
+              href="https://kanzakh.github.io/EduSite-Cap1/"
               target="_blank"
               rel="noopener noreferrer"
               className="project-link"
@@ -306,7 +306,7 @@ export default function Home() {
             </span>
 
             <a
-              href="https://github.com/kanzakh/Space-Exploration-Site"
+              href="https://kanzakh.github.io/Space-Exploration-Site/"
               target="_blank"
               rel="noopener noreferrer"
               className="project-link"
@@ -344,7 +344,7 @@ export default function Home() {
             </span>
 
             <a
-              href="https://github.com/kanzakh/tic-tac-toe"
+              href="https://kanzakh.github.io/tic-tac-toe/"
               target="_blank"
               rel="noopener noreferrer"
               className="project-link"
@@ -382,7 +382,7 @@ export default function Home() {
             </span>
 
             <a
-              href="https://github.com/kanzakh/Article-Hub"
+              href="https://article-hub-psi.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
               className="project-link"
@@ -531,9 +531,13 @@ export default function Home() {
 
             <div className="socials">
 
-              <span>Twitter/X</span>
-              <span>LinkedIn</span>
-              <span>GitHub</span>
+              <a
+                href="https://github.com/kanzakh"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub
+              </a>
 
             </div>
 
