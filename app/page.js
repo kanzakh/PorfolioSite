@@ -4,6 +4,7 @@ import { useState } from "react";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <main className={darkMode ? "dark-mode" : ""}>
@@ -15,11 +16,14 @@ export default function Home() {
           KANZA<span>.</span>
         </h2>
 
-        <div className="nav-links">
-          <a href="#home">Home</a>
-          <a href="#about">About Me</a>
-          <a href="#skills">Skills</a>
-          <a href="#work">My Work</a>
+        <div className={menuOpen ? "nav-links open" : "nav-links"}>
+          <a href="#home" onClick={() => setMenuOpen(false)}>Home</a>
+          <a href="#about" onClick={() => setMenuOpen(false)}>About Me</a>
+          <a href="#skills" onClick={() => setMenuOpen(false)}>Skills</a>
+          <a href="#work" onClick={() => setMenuOpen(false)}>My Work</a>
+          <a href="#contact" className="nav-button mobile-only" onClick={() => setMenuOpen(false)}>
+            Contact ↗
+          </a>
         </div>
 
         <div className="nav-actions">
@@ -32,9 +36,20 @@ export default function Home() {
             {darkMode ? "☀" : "☾"}
           </button>
 
-          <a href="#contact" className="nav-button">
+          <a href="#contact" className="nav-button desktop-only">
             Contact ↗
           </a>
+
+          <button
+            className={menuOpen ? "hamburger open" : "hamburger"}
+            onClick={() => setMenuOpen(!menuOpen)}
+            aria-label="Toggle menu"
+            aria-expanded={menuOpen}
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
 
         </div>
       </nav>
